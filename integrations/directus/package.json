@@ -22,7 +22,7 @@
     "changelog.md"
   ],
   "scripts": {
-    "dev": "tsup --watch",
+    "dev": "node api.js && tsup --watch",
     "build": "tsc --noEmit && tsup",
     "test": "vitest run"
   },

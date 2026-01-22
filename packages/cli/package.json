@@ -1,6 +1,6 @@
 {
   "name": "lingo.dev",
-  "version": "0.124.0",
+  "version": "0.125.0",
   "description": "Lingo.dev CLI",
   "private": false,
   "repository": {
@@ -118,7 +118,7 @@
   ],
   "scripts": {
     "lingo.dev": "node --inspect=9229 ./bin/cli.mjs",
-    "dev": "tsup --watch",
+    "dev": "node api.js && tsup --watch",
     "build": "pnpm typecheck && tsup",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",

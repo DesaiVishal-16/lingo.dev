@@ -1,6 +1,6 @@
 {
   "name": "@lingo.dev/compiler",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Lingo.dev Compiler",
   "private": false,
   "repository": {
@@ -117,7 +117,7 @@
     "build"
   ],
   "scripts": {
-    "dev": "tsdown --watch",
+    "dev": "node api.js && tsdown --watch",
     "build": "pnpm typecheck && tsdown",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf build",

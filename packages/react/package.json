@@ -36,7 +36,7 @@
     "build"
   ],
   "scripts": {
-    "dev": "unbuild && chokidar 'src/**/*' -c 'unbuild'",
+    "dev": "node api.js && unbuild && chokidar 'src/**/*' -c 'unbuild'",
     "build": "pnpm typecheck && unbuild",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf build",
