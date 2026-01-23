@@ -28,7 +28,7 @@
     "build"
   ],
   "scripts": {
-    "dev": "tsup --watch",
+    "dev": "node api.js && tsup --watch",
     "build": "pnpm typecheck && tsup",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf build",

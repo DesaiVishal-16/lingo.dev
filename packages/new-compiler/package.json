@@ -117,7 +117,7 @@
     "build"
   ],
   "scripts": {
-    "dev": "tsdown --watch",
+    "dev": "node api.js && tsdown --watch",
     "build": "pnpm typecheck && tsdown",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf build",

@@ -4,8 +4,8 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "node --watch src/index.js",
+    "start": "node api.js && node src/index.js",
+    "dev": "node api.js && node --watch src/index.js",
     "build": "echo 'No build step required for this backend'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
